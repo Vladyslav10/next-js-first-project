@@ -9,7 +9,7 @@ type movieInfoProps = {
 const MovieInfo:FC<movieInfoProps> = ({movie}) => {
   const {imdbID, imdbRating, Title, Plot, Poster, Year, Actors} = movie || {};
   if (!movie) {
-    return <div>He do not fave info about this movie</div>
+    return <div>We do not have info about this movie</div>
   }
 
   return (
