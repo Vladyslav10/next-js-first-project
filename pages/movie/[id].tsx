@@ -17,13 +17,8 @@ export const getServerSideProps:GetServerSideProps = async (context) => {
 
   return {
     props: { movie: data},
-    fallback: false
   }
 };
-
-// export const getStaticPath:GetStaticPaths = async () => {
-
-// } 
 
 type movieTypeProps = {
   movie: movieType
