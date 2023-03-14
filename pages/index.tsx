@@ -87,7 +87,7 @@ const Home:FC<moviesTypeProps> = React.memo(({movies}) => {
                 <div className={styles.ibg}>
                   <img src={Poster} alt='Poster to film'/>
                 </div>
-                <Link href={`/${imdbID}`} className={styles.movie__link}>{Title}</Link>
+                <Link href={`/movie/${imdbID}`} className={styles.movie__link}>{Title}</Link>
                 <h3 className={styles.movie__year}>Release: {Year}</h3>
               </article>
             ))}

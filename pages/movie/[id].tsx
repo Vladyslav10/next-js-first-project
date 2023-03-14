@@ -2,7 +2,7 @@ import { movieType } from '@/types/types';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head'
 import { FC } from 'react';
-import MovieInfo from '../components/MovieInfo';
+import MovieInfo from '../../components/MovieInfo';
 
 export const getServerSideProps:GetServerSideProps = async (context) => {
   const { id } = context.query
