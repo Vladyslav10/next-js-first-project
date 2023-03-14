@@ -39,5 +39,3 @@ const Movie:FC<movieTypeProps> = ({movie}) => {
     </>
   )
 };
-  
-export default Movie;
