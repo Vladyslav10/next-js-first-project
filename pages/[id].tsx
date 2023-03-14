@@ -5,7 +5,7 @@ import { FC } from 'react';
 import MovieInfo from '../components/MovieInfo';
 
 export const getServerSideProps:GetServerSideProps = async (context) => {
-  const id = context.query.id
+  const { id } = context.query
   const response = await fetch(`https://www.omdbapi.com/?&apikey=9ae0df05&i=${id}`);
   const data = await response.json();
   
